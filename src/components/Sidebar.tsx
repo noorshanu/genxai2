@@ -3,6 +3,7 @@
 import { FC } from "react";
 import { IoReloadOutline } from "react-icons/io5";
 import { IoAdd } from "react-icons/io5";
+import { MdOutlineMessage } from "react-icons/md";
 
 
 interface SidebarProps {
@@ -32,14 +33,40 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
           <nav className="flex-1 overflow-y-auto py-2 space-y-2  ">
             <a
               href="#"
-              className="flex justify-center items-center space-x-3 bg-[#101114] rounded-full mx-8 py-2 "
+              className="flex justify-center items-center space-x-3 bg-[#101114] rounded-lg mx-2 py-2 "
             >
               <span className="text-xl">
              <IoAdd/>
               </span>
               <span className="font-sf text-[#ffffff] font-bold">New Agents</span>
             </a>
-
+            <a
+              href="#"
+              className="flex   gap-2 items-center  text-gray-300 bg-[#2F2F2F] border border-[#505B74] px-3 rounded-lg mx-2 py-2 hover:bg-gray-800 mt-3"
+            >
+              <span className="text-lg">
+                <MdOutlineMessage/>
+              </span>
+              <span className="font-sf text-sm font-semibold text-[#D1D3F9]">AI Agent 01</span>
+            </a>
+            <a
+              href="#"
+              className="flex   gap-2 items-center  text-gray-300 px-3 rounded-lg mx-2 py-2 hover:bg-gray-800 mt-3"
+            >
+              <span className="text-lg">
+                <MdOutlineMessage/>
+              </span>
+              <span className="font-sf text-sm font-semibold text-[#D1D3F9]">AI Agent 02</span>
+            </a>
+            <a
+              href="#"
+              className="flex   gap-2 items-center  text-gray-300 px-3 rounded-lg mx-2 py-2 hover:bg-gray-800 mt-3"
+            >
+              <span className="text-lg">
+                <MdOutlineMessage/>
+              </span>
+              <span className="font-sf text-sm font-semibold text-[#D1D3F9]">AI Agent 03</span>
+            </a>
          
             
           </nav>
