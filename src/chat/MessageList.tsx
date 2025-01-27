@@ -27,7 +27,7 @@ const MessageBubble: FC<MessageBubbleProps> = ({ isUser, content }) => {
           max-w-[80%]  rounded-4xl my-4
           ${isUser ? 'chat1' : 'chat2'} 
           rounded-4xl px-4 py-3 
-          break-words
+       
           shadow-md
           ${isUser ? 'ml-auto' : 'mr-auto'}
         `}
