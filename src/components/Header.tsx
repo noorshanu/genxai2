@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { FC } from 'react';
 import { FaRegBell } from "react-icons/fa";
-import { FaMoon } from "react-icons/fa6";
+
 import { IoInformationCircleOutline } from "react-icons/io5";
 interface HeaderProps {
   onMenuClick: () => void;

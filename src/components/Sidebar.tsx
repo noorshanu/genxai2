@@ -4,7 +4,7 @@ import { FC } from "react";
 import { FiSun } from "react-icons/fi";
 import { IoAdd } from "react-icons/io5";
 import { MdOutlineMessage } from "react-icons/md";
-import { FaRegTrashAlt,    FaSignOutAlt } from "react-icons/fa";
+import { FaRegTrashAlt } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { MdOutlineLogout } from "react-icons/md";
