@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../fonts/sfpro.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  color: var(--foreground);
+  background: #101114;
+  font-family: 'SF Pro';
+}
+.side{
+  border-right: 1px solid #505B74;
+
+  background: #1C1E22;
+backdrop-filter: blur(6px);
+
+}
+.bg-main{
+  background: #101114;
+}
+.btn{
+  border-radius: 12px;
+border: 1px solid #9C9AFF;
+
+background: radial-gradient(161.21% 160.39% at 5.71% -44.13%, #263248 0%, rgba(26, 26, 26, 0.27) 100%);
+}
+
+
+
+.lh-0-5 {
+  line-height: 0.5 !important;
+}
+.lh-1 {
+  line-height: 1 !important;
+}
+.lh-1_1 {
+  line-height: 1.1 !important;
+}
+.lh-1_2 {
+  line-height: 1.2 !important;
+}
+.lh-1_3 {
+  line-height: 1.3 !important;
+}
+.lh-1_4 {
+  line-height: 1.4 !important;
+}
+.lh-1_5 {
+  line-height: 1.5 !important;
+}
+.lh-1_6 {
+  line-height: 1.6 !important;
+}
+.lh-1_7 {
+  line-height: 1.7 !important;
+}
+.lh-1_8 {
+  line-height: 1.8 !important;
+}
+.lh-1_9 {
+  line-height: 1.9 !important;
+}
+
+.chat-input{
+  border-radius: 12px;
+background: radial-gradient(75% 75% at 50% 91.9%, #121212 0%, #0D0D0D 100%);
+box-shadow: 0px 0.156px 0.052px 0.26px rgba(0, 0, 0, 0.40), 0px 0px 0.052px 0.104px #000, 0px 0.208px 0.104px 0.104px rgba(0, 0, 0, 0.25) inset, 0px 0.104px 0.104px 0.104px rgba(255, 255, 255, 0.20) inset;
+}
+
+.font-sf{
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.box-pro{
+  border-radius: 8.64px;
+border: 1px solid #3659B1;
+background: linear-gradient(109deg, #263248 -13.52%, #0C1626 78.67%);
+}
+
+.search-box{
+  border-radius: 21.299px;
+background: #1C1E22;
+box-shadow: 9.939px 12.069px 28.398px 2.84px rgba(35, 42, 49, 0.08);
+}
+
+.chat1{
+  border-radius: 12px;
+border: 1px solid #000000;
+background: #1C1E22;
+
+}
+.chat2{
+border-radius: 12px;
+border: 1px solid #000000;
+background: #1C1E22;
+
+
+}
+
+/* Webkit browsers (Chrome, Safari, newer Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0C1626;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263248;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3659B1;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #263248 #0C1626;
+}
+
+
+
