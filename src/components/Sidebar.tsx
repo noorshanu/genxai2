@@ -4,6 +4,7 @@ import { FC } from "react";
 import { IoReloadOutline } from "react-icons/io5";
 import { IoAdd } from "react-icons/io5";
 import { MdOutlineMessage } from "react-icons/md";
+import { FaTrash, FaMoon, FaUser, FaQuestionCircle, FaSignOutAlt } from "react-icons/fa";
 
 
 interface SidebarProps {
@@ -70,40 +71,46 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
          
             
           </nav>
-          <div className="relative p-4 box-pro rounded-lg  mx-4">
-            <div className="flex items-center justify-between mb-2">
-              <span className="text-3xl font-medium text-white font-sf">78.65%</span>
-              <span className="px-2 py-1 text-xs font-semibold bg-purple-500 text-white rounded-full">
-                PRO
-              </span>
-            </div>
+          <div className="relative pb-3  mx-2">
+          <div className=" text-white ">
+      <ul className="space-y-4">
+        {/* Clear Conversations */}
+        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+          <FaTrash className="text-base" />
+          <span className="text-sm">Clear conversations</span>
+        </li>
 
-            <div className="text-sm text-gray-400 font-sf">Performance boosted</div>
+        {/* Dark Mode */}
+        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+          <FaMoon className="text-xl" />
+          <span>Dark mode</span>
+        </li>
 
-            {/* Progress indicator */}
-            <div className="mt-3 space-y-2">
-              <div className="flex items-center text-xs text-gray-400">
-                <span className="flex-shrink-0 font-sf">↑ 36.50%</span>
-                <span className="ml-2 text-gray-500 font-sf">
-                  Since last you visited
-                </span>
-              </div>
+        {/* My Account */}
+        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+          <FaUser className="text-xl" />
+          <span>My account</span>
+        </li>
 
-              {/* Progress bar */}
-              <div className="h-1 w-full bg-gray-700 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-purple-500 rounded-full"
-                  style={{ width: "78.65%" }}
-                />
-              </div>
-            </div>
+        {/* Updates & FAQ */}
+        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+          <FaQuestionCircle className="text-xl" />
+          <span>Updates & FAQ</span>
+        </li>
 
+        {/* Disconnect Wallet */}
+        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+          <FaSignOutAlt className="text-xl" />
+          <span>Disconnect Wallet</span>
+        </li>
+      </ul>
+    </div>
             {/* Clear chats button */}
           </div>
-          <button className="my-4  mx-9 flex items-center justify-center space-x-2 py-2 px-4 text-sm text-gray-400 hover:text-white transition-colors duration-200 btn">
+          {/* <button className="my-4  mx-9 flex items-center justify-center space-x-2 py-2 px-4 text-sm text-gray-400 hover:text-white transition-colors duration-200 btn">
             <IoReloadOutline />
             <span>Clear all chats</span>
-          </button>
+          </button> */}
         </div>
       </div>
     </>
