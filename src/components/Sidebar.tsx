@@ -2,6 +2,8 @@
 // components/layout/Sidebar.tsx
 import { FC } from "react";
 import { IoReloadOutline } from "react-icons/io5";
+import { IoAdd } from "react-icons/io5";
+
 
 interface SidebarProps {
   isOpen: boolean;
@@ -30,31 +32,14 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
           <nav className="flex-1 overflow-y-auto py-2 space-y-2  ">
             <a
               href="#"
-              className="flex justify-center items-center space-x-3 text-gray-300 pt-3 pb-5  border-b-[0.5px] border-[#D1D3F9] "
+              className="flex justify-center items-center space-x-3 bg-[#101114] rounded-full mx-8 py-2 "
             >
               <span className="text-xl">
-                <img src="images/star.png" alt="" />
+             <IoAdd/>
               </span>
-              <span className="font-sf text-[#AEB3F6] font-bold">AI Agents Generation</span>
+              <span className="font-sf text-[#ffffff] font-bold">New Agents</span>
             </a>
-            <a
-              href="#"
-              className="flex ml-4  gap-4 items-center space-x-3 text-gray-300 p-2 rounded-lg hover:bg-gray-800"
-            >
-              <span className="text-xl">
-                <img src="images/layer.svg" alt="" />
-              </span>
-              <span className="font-sf text-base font-semibold text-[#D1D3F9]">AI Creation</span>
-            </a>
-            <a
-              href="#"
-              className="flex ml-4 gap-4 items-center space-x-3 text-gray-300 p-2 rounded-lg hover:bg-gray-800"
-            >
-              <span className="text-xl">
-                <img src="images/home.svg" alt="" />
-              </span>
-              <span className="font-sf text-base font-semibold text-[#D1D3F9]">Dashboard</span>
-            </a>
+
          
             
           </nav>
