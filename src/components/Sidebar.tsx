@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 // components/layout/Sidebar.tsx
 import { FC } from "react";
-import { IoReloadOutline } from "react-icons/io5";
+import { FiSun } from "react-icons/fi";
 import { IoAdd } from "react-icons/io5";
 import { MdOutlineMessage } from "react-icons/md";
-import { FaTrash, FaMoon, FaUser, FaQuestionCircle, FaSignOutAlt } from "react-icons/fa";
+import { FaRegTrashAlt,    FaSignOutAlt } from "react-icons/fa";
+import { AiOutlineUser } from "react-icons/ai";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { MdOutlineLogout } from "react-icons/md";
 
 
 interface SidebarProps {
@@ -73,35 +76,35 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
           </nav>
           <div className="relative pb-3  mx-2">
           <div className=" text-white ">
-      <ul className="space-y-4">
+      <ul className="space-y-2">
         {/* Clear Conversations */}
         <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <FaTrash className="text-base" />
+          <FaRegTrashAlt className="text-base" />
           <span className="text-sm">Clear conversations</span>
         </li>
 
         {/* Dark Mode */}
         <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <FaMoon className="text-xl" />
-          <span>Dark mode</span>
+          <FiSun className="text-base" />
+          <span className="text-sm">Dark mode</span>
         </li>
 
         {/* My Account */}
         <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <FaUser className="text-xl" />
-          <span>My account</span>
+          <AiOutlineUser  className="text-base" />
+          <span className="text-sm">My account</span>
         </li>
 
         {/* Updates & FAQ */}
         <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <FaQuestionCircle className="text-xl" />
-          <span>Updates & FAQ</span>
+          <FaArrowUpRightFromSquare  className="text-sm" />
+          <span className="text-sm">Updates & FAQ</span>
         </li>
 
         {/* Disconnect Wallet */}
         <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <FaSignOutAlt className="text-xl" />
-          <span>Disconnect Wallet</span>
+          <MdOutlineLogout className="text-base" />
+          <span className="text-sm">Disconnect Wallet</span>
         </li>
       </ul>
     </div>

@@ -31,9 +31,7 @@ const Header: FC<HeaderProps> = ({ onMenuClick }) => {
     <button >
     <FaRegBell />
     </button>
-    <button >
-    <FaMoon />
-    </button>
+   
     <button >
     <IoInformationCircleOutline />
     </button>
