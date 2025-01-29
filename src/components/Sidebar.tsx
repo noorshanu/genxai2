@@ -37,7 +37,7 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
           </div>
           <nav className="flex-1 overflow-y-auto py-2 space-y-2  ">
             <a
-              href="/"
+              href="/chat-genx"
               className="flex justify-center items-center space-x-3 bg-[#101114] rounded-lg mx-2 py-2 "
             >
               <span className="text-xl">

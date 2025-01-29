@@ -1,12 +1,15 @@
 import NewChat from '@/chat/NewChat';
-import NewLayout from "@/components/NewLayout";
+import NewChatLayout from '@/components/NewChatLayout';
+
 
 
 export default function Home() {
   return (
-<NewLayout>
-<NewChat/>
-</NewLayout>
+
+<NewChatLayout>
+  <NewChat/>
+</NewChatLayout>
+
  
 
   );
