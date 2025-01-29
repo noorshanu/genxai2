@@ -25,13 +25,13 @@ export default function GenXAIComponent() {
             </div>
             <ul className="space-y-3 text-[#000] ">
               <li className="bg-[#fff] p-3 rounded-lg text-sm text-start">
-                "Create me an AI Agent structure related to current trends of $BASE"
+                Create me an AI Agent structure related to current trends of $BASE
               </li>
               <li className="bg-white text-sm p-3 rounded-lg text-start">
-                "Got any creative ideas for Agents working on X?"
+                Got any creative ideas for Agents working on X?
               </li>
               <li className="bg-white text-sm p-3 rounded-lg text-start">
-                "Do I need to code my Agent to launch or How do I launch my agent at GenX AI?"
+                Do I need to code my Agent to launch or How do I launch my agent at GenX AI?
               </li>
             </ul>
           </div>
