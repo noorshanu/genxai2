@@ -6,7 +6,7 @@ import { AiOutlineStop } from "react-icons/ai";
 
 const ChatInput: FC = () => {
   return (
-    <div className="flex items-center justify-center gap-4 w-full  px-4 py-14 ">
+    <div className="flex items-center justify-center gap-4 w-full  px-4 pb-10 ">
       <div className="relative flex justify-center flex-1">
         <input
           type="text"

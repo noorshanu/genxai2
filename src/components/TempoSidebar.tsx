@@ -16,7 +16,7 @@ interface SidebarProps {
   setIsOpen: (isOpen: boolean) => void;
 }
 
-const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
+const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
   return (
     <>
       {isOpen && (
@@ -45,33 +45,9 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
               </span>
               <span className="font-sf text-[#ffffff] font-bold">New Agents</span>
             </a>
-            <a
-              href="/profile"
-              className="flex   gap-2 items-center  text-gray-300 bg-[#2F2F2F] border border-[#505B74] px-3 rounded-lg mx-2 py-2 hover:bg-gray-800 mt-3"
-            >
-              <span className="text-lg">
-                <MdOutlineMessage/>
-              </span>
-              <span className="font-sf text-sm font-semibold text-[#D1D3F9]">AI Agent 01</span>
-            </a>
-            <a
-              href="#"
-              className="flex   gap-2 items-center  text-gray-300 px-3 rounded-lg mx-2 py-2 hover:bg-gray-800 mt-3"
-            >
-              <span className="text-lg">
-                <MdOutlineMessage/>
-              </span>
-              <span className="font-sf text-sm font-semibold text-[#D1D3F9]">AI Agent 02</span>
-            </a>
-            <a
-              href="#"
-              className="flex   gap-2 items-center  text-gray-300 px-3 rounded-lg mx-2 py-2 hover:bg-gray-800 mt-3"
-            >
-              <span className="text-lg">
-                <MdOutlineMessage/>
-              </span>
-              <span className="font-sf text-sm font-semibold text-[#D1D3F9]">AI Agent 03</span>
-            </a>
+       
+       
+     
          
             
           </nav>
@@ -121,4 +97,4 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
   );
 };
 
-export default Sidebar;
+export default TempoSidebar;

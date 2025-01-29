@@ -18,7 +18,7 @@ const MessageBubble: FC<MessageBubbleProps> = ({ isUser, content }) => {
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} mb-4`}>
       {!isUser && (
-        <div className="w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center mr-3 shrink-0 overflow-hidden">
+        <div className="w-8 h-8 rounded-full  flex items-center justify-center mr-3 shrink-0 overflow-hidden">
           <img src="images/ailog.svg" alt="AI" className="w-5 h-5 object-cover" />
         </div>
       )}
