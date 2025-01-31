@@ -1,10 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { FaRegCopy } from "react-icons/fa6";
+import Profilemark from "./Profilemark";
 
 function AgentDetails() {
   return (
     <div className="bg-black pb-[5%] text-white  overflow-hidden">
+     <div className=" overflow-hidden">
+     <Profilemark/>
+     </div>
       {/* About AgentX Section */}
       <div className="flex flex-col md:flex-row items-center mt-12 px-12 space-y-6 md:space-y-0 md:space-x-12">
         {/* Image Card */}

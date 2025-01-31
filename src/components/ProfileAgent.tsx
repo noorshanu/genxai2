@@ -5,6 +5,7 @@ import AgentDetails from './AgentDetails'
 function ProfileAgent() {
   return (
   <NewChatLayout>
+
     <AgentDetails/>
 
   </NewChatLayout>
