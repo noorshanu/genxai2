@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0000;
     --foreground: #ededed;
   }
 }
@@ -24,7 +24,7 @@
 
 body {
   color: var(--foreground);
-  background: #101114;
+  background: #000;
   font-family: 'SF Pro';
 }
 .side{
@@ -35,7 +35,7 @@ backdrop-filter: blur(6px);
 
 }
 .bg-main{
-  background: #101114;
+  background: #000;
 }
 .btn{
   border-radius: 12px;
