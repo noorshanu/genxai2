@@ -3,7 +3,6 @@
 // components/layout/Sidebar.tsx
 import { FC } from "react";
 import { FiSun } from "react-icons/fi";
-import { IoAdd } from "react-icons/io5";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
@@ -40,13 +39,13 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
           <nav className="flex-1 overflow-y-auto py-2 space-y-2  mt-6 pr-[18px] ">
             <a
               href="/chat-genx"
-              className="flex justify-center items-center space-x-3  rounded-lg mx-2 py-2 relative  "
+              className="flex justify-evenly items-center space-x-3  rounded-lg mx-2 py-2 relative  "
             >
               <span className="text-xl z-10">
-                <IoAdd />
+                <img src="images/star.svg" alt="" />
               </span>
               <span className="font-sf text-[#ffffff] font-bold z-10">
-                New Agents
+                Create
               </span>
               <img src="images/btn.png" alt="" className=" absolute top-0 left-0 right-0 mx-auto" />
             </a>
