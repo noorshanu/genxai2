@@ -1,4 +1,4 @@
- /* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-img-element */
 // components/layout/Sidebar.tsx
 import { FC } from "react";
 import { FiSun } from "react-icons/fi";
