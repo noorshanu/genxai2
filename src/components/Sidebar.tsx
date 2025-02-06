@@ -7,6 +7,7 @@ import { LuSquareArrowUp } from "react-icons/lu";
 import { AiOutlineUser } from "react-icons/ai";
 import { PiLinkSimpleBreakBold } from "react-icons/pi";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa6";
+import AccountModal from "./AccountModal";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -22,6 +23,7 @@ const Dropdown: FC<{
   children?: React.ReactNode;
 }> = ({ title, icon, children }) => {
   const [isOpen, setIsOpen] = useState(false);
+
 
   return (
     <div className="w-full">
@@ -44,7 +46,7 @@ const Dropdown: FC<{
 
 const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
   const [selectedAgent, setSelectedAgent] = useState("Agent 01");
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       {isOpen && (
@@ -111,7 +113,7 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
                 <FiSun />
                 <span>Dark Mode</span>
               </li>
-              <li className="flex items-center gap-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+              <li className="flex items-center gap-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg" onClick={() => setIsModalOpen(true)}>
                 <AiOutlineUser />
                 <span>My Account</span>
               </li>
@@ -129,6 +131,7 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
           </div>
         </div>
       </div>
+      <AccountModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 };
