@@ -7,6 +7,7 @@ import { FaRegTrashAlt } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { MdOutlineLogout } from "react-icons/md";
+import { PiLinkSimpleBreakBold } from "react-icons/pi";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -39,13 +40,38 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
           <nav className="flex-1 overflow-y-auto py-2 space-y-2  mt-6 pr-[18px] ">
             <a
               href="/chat-genx"
-              className="flex justify-evenly items-center space-x-3  rounded-lg mx-2 py-2 relative  "
+              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
             >
               <span className="text-xl z-10">
-                <img src="images/star.svg" alt="" />
+                <img src="images/star.svg" alt="" className=" mr-12" />
               </span>
               <span className="font-sf text-[#ffffff] font-bold z-10">
                 Create
+              </span>
+              <img src="images/btn.png" alt="" className=" absolute top-0 left-0 right-0 mx-auto" />
+            </a>
+            <a
+              href="/chat-genx"
+              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
+            >
+              <span className="text-xl z-10">
+                <img src="images/msg.svg" alt="" className=" mr-12" />
+              </span>
+              <span className="font-sf text-[#ffffff] font-bold z-10">
+                Generate
+              </span>
+              <img src="images/btn.png" alt="" className=" absolute top-0 left-0 right-0 mx-auto" />
+            </a>
+
+            <a
+              href="/chat-genx"
+              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
+            >
+              <span className="text-xl z-10">
+                <img src="images/chart.svg" alt="" className=" mr-12" />
+              </span>
+              <span className="font-sf text-[#ffffff] font-bold z-10">
+                Trade
               </span>
               <img src="images/btn.png" alt="" className=" absolute top-0 left-0 right-0 mx-auto" />
             </a>
@@ -78,7 +104,11 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
                 </li>
 
                 {/* Disconnect Wallet */}
-                <li className="flex items-center space-x-3 bg-[#6D6BFF] cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+                <li className="flex items-center space-x-3 bg-[#6D6BFF] cursor-pointer hover:bg-gray-700 p-2 mr-7 rounded-lg">
+                  <PiLinkSimpleBreakBold className="text-base" />
+                  <span className="text-sm">connect Wallet</span>
+                </li>
+                <li className="flex items-center space-x-3 bg-[#6D6BFF] cursor-pointer hover:bg-gray-700 p-2 mr-7 rounded-lg">
                   <MdOutlineLogout className="text-base" />
                   <span className="text-sm">Disconnect Wallet</span>
                 </li>

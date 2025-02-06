@@ -141,4 +141,14 @@ background: #1C1E22;
 }
 
 
+.newbox{
+  border-radius: 6px;
+border: 0.5px solid #9C9AFF;
+background: radial-gradient(403.07% 261.28% at -70.97% 15.31%, #263248 0%, rgba(26, 26, 26, 0.10) 100%);
+}
 
+.subbox{
+ background-image: url('/images/sub.png');
+ background-size: cover;
+ 
+}

@@ -4,12 +4,12 @@ import React from 'react'
 
 function Profilemark() {
   return (
-    <div className='bg-[#1C1E22] border-t border-b py-3 px-6 flex flex-col sm:flex-row items-center overflow-hidden'>
-   
+    <div className=' border-gray-500  border-b py-1 px-6 flex flex-col sm:flex-row items-center overflow-hidden'>
+
   
       <div className='bg-[#35425A] rounded-lg p-2 flex mx-8  w-full gap-4 relative'>
         <div className=' flex gap-2 w-full'>
-          <img src="images/nft3.png" alt="" />
+          <img src="images/nft3.png" alt="" className='h-full' />
           <div>
             <p className=' font-bold text-base py-1'>
               Agenx ($agenx)
