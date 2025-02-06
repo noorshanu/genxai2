@@ -98,7 +98,7 @@ const MessageList: FC<MessageListProps> = ({ messages = [] }) => {
   const displayMessages = messages.length > 0 ? messages : defaultMessages;
 
   return (
-    <div className="flex-1 overflow-y-auto p-4 space-y-4 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+    <div className="flex-1 overflow-y-auto p-4 space-y-4 scrollbar-hidden">
       {displayMessages.map((message) => (
         <MessageBubble
           key={message.id}
