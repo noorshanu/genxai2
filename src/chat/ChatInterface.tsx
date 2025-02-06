@@ -1,16 +1,22 @@
 import { FC } from 'react';
 import MessageList from './MessageList';
 import ChatInput from './ChatInput';
-import NewLayout from '@/components/NewLayout';
+
+import NewChatLayout from '@/components/NewChatLayout';
+import Header from '@/components/Header';
 
 const ChatInterface: FC = () => {
   return (
-   <NewLayout>
-     <div className="flex flex-col h-[calc(100vh--73px)] sm:h-[calc(100vh-73px)]">
-      <MessageList />
+<NewChatLayout>
+<>
+<Header/>
+     <div className="flex flex-col h-[calc(100vh--73px)] sm:h-[calc(100vh-73px)] max-w-4xl mx-auto">
+      <MessageList /> 
       <ChatInput />
-    </div>
-   </NewLayout>
+      </div>
+</>
+      </NewChatLayout>
+
   );
 };
 
