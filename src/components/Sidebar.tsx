@@ -1,15 +1,11 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-/* eslint-disable @next/next/no-img-element */
+ /* eslint-disable @next/next/no-img-element */
 // components/layout/Sidebar.tsx
 import { FC } from "react";
 import { FiSun } from "react-icons/fi";
-import { IoAdd } from "react-icons/io5";
-import { MdOutlineMessage } from "react-icons/md";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { MdOutlineLogout } from "react-icons/md";
-
+import { PiLinkSimpleBreakBold } from "react-icons/pi";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -32,89 +28,101 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
         ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
       >
         <div className="flex flex-col h-full">
-          <div className=" py-5 ">
-            <img src="/images/Logo.png" alt="" className=" px-4 h-[32px] mx-auto"  />
+          <div className=" pt-8 pb-9 border-b border-gray-400 ">
+            <img
+              src="/images/Logo.png"
+              alt=""
+              className=" px-4 h-[32px] mx-auto"
+            />
           </div>
-          <nav className="flex-1 overflow-y-auto py-2 space-y-2  ">
+          <nav className="flex-1 overflow-y-auto py-2 space-y-2  mt-6 pr-[18px] ">
             <a
               href="/chat-genx"
-              className="flex justify-center items-center space-x-3 bg-[#101114] rounded-lg mx-2 py-2 "
+              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
             >
-              <span className="text-xl">
-             <IoAdd/>
+              <span className="text-xl z-10">
+                <img src="images/star.svg" alt="" className=" mr-12" />
               </span>
-              <span className="font-sf text-[#ffffff] font-bold">New Agents</span>
+              <span className="font-sf text-[#ffffff] font-bold z-10">
+                Create
+              </span>
+              <img
+                src="images/btn.png"
+                alt=""
+                className=" absolute top-0 left-0 right-0 mx-auto"
+              />
             </a>
             <a
-              href="/profile"
-              className="flex   gap-2 items-center  text-gray-300 bg-[#2F2F2F] border border-[#505B74] px-3 rounded-lg mx-2 py-2 hover:bg-gray-800 mt-3"
+              href="/chat-genx"
+              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
             >
-              <span className="text-lg">
-                <MdOutlineMessage/>
+              <span className="text-xl z-10">
+                <img src="images/msg.svg" alt="" className=" mr-12" />
               </span>
-              <span className="font-sf text-sm font-semibold text-[#D1D3F9]">AI Agent 01</span>
+              <span className="font-sf text-[#ffffff] font-bold z-10">
+                Generate
+              </span>
+              <img
+                src="images/btn.png"
+                alt=""
+                className=" absolute top-0 left-0 right-0 mx-auto"
+              />
             </a>
+
             <a
-              href="#"
-              className="flex   gap-2 items-center  text-gray-300 px-3 rounded-lg mx-2 py-2 hover:bg-gray-800 mt-3"
+              href="/chat-genx"
+              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
             >
-              <span className="text-lg">
-                <MdOutlineMessage/>
+              <span className="text-xl z-10">
+                <img src="images/chart.svg" alt="" className=" mr-12" />
               </span>
-              <span className="font-sf text-sm font-semibold text-[#D1D3F9]">AI Agent 02</span>
-            </a>
-            <a
-              href="#"
-              className="flex   gap-2 items-center  text-gray-300 px-3 rounded-lg mx-2 py-2 hover:bg-gray-800 mt-3"
-            >
-              <span className="text-lg">
-                <MdOutlineMessage/>
+              <span className="font-sf text-[#ffffff] font-bold z-10">
+                Trade
               </span>
-              <span className="font-sf text-sm font-semibold text-[#D1D3F9]">AI Agent 03</span>
+              <img
+                src="images/btn.png"
+                alt=""
+                className=" absolute top-0 left-0 right-0 mx-auto"
+              />
             </a>
-         
-            
           </nav>
-          <div className="relative pb-3  mx-2">
-          <div className=" text-white ">
-      <ul className="space-y-2">
-        {/* Clear Conversations */}
-        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <FaRegTrashAlt className="text-base" />
-          <span className="text-sm">Clear conversations</span>
-        </li>
+          <div className="relative pb-3 border-t border-gray-400 px-4">
+            <div className=" text-white pt-4 ">
+              <ul className="space-y-2">
+                {/* Clear Conversations */}
+                <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+                  <FaRegTrashAlt className="text-base" />
+                  <span className="text-sm">Clear conversations</span>
+                </li>
 
-        {/* Dark Mode */}
-        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <FiSun className="text-base" />
-          <span className="text-sm">Dark mode</span>
-        </li>
+                {/* Dark Mode */}
+                <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+                  <FiSun className="text-base" />
+                  <span className="text-sm">Dark mode</span>
+                </li>
 
-        {/* My Account */}
-        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <AiOutlineUser  className="text-base" />
-          <span className="text-sm">My account</span>
-        </li>
+                {/* My Account */}
+                <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+                  <AiOutlineUser className="text-base" />
+                  <span className="text-sm">My account</span>
+                </li>
 
-        {/* Updates & FAQ */}
-        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <FaArrowUpRightFromSquare  className="text-sm" />
-          <span className="text-sm">Updates & FAQ</span>
-        </li>
+                {/* Updates & FAQ */}
+                <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
+                  <FaArrowUpRightFromSquare className="text-sm" />
+                  <span className="text-sm">Faq</span>
+                </li>
 
-        {/* Disconnect Wallet */}
-        <li className="flex items-center space-x-3 cursor-pointer hover:bg-gray-700 p-2 rounded-lg">
-          <MdOutlineLogout className="text-base" />
-          <span className="text-sm">Disconnect Wallet</span>
-        </li>
-      </ul>
-    </div>
-            {/* Clear chats button */}
+                {/* Disconnect Wallet */}
+                <li className="flex items-center space-x-3 bg-[#6D6BFF] cursor-pointer hover:bg-gray-700 p-2 mr-7 rounded-lg">
+                  <PiLinkSimpleBreakBold className="text-base" />
+                  <a href="/list-agents" className="text-sm">
+                    Wallet Connected
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          {/* <button className="my-4  mx-9 flex items-center justify-center space-x-2 py-2 px-4 text-sm text-gray-400 hover:text-white transition-colors duration-200 btn">
-            <IoReloadOutline />
-            <span>Clear all chats</span>
-          </button> */}
         </div>
       </div>
     </>
