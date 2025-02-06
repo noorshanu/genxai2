@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { BsStars } from "react-icons/bs";
-import { LuShieldAlert } from "react-icons/lu";
+
 export default function GenXAIComponent() {
   return (
     <div className="bg-black text-white px-6 md:px-16 lg:px-32 pt-16  ">

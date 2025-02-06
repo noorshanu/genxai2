@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
+
 /* eslint-disable @next/next/no-img-element */
 // components/layout/Sidebar.tsx
 import { FC } from "react";

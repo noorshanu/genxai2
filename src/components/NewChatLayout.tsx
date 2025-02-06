@@ -1,7 +1,7 @@
 "use client";
 // components/layout/Layout.tsx
 import React, { ReactNode, useState } from "react";
-import Header from "./Header";
+
 import TempoSidebar from "./TempoSidebar";
 
 const NewChatLayout: React.FC<{ children: ReactNode }> = ({ children }) => {

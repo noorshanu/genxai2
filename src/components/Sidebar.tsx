@@ -2,7 +2,7 @@
 "use client";
 import { FC, useState } from "react";
 import { FiSun } from "react-icons/fi";
-import { FaRegTrashAlt, FaArrowUpRightFromSquare } from "react-icons/fa";
+import { FaRegTrashAlt } from "react-icons/fa";
 import { LuSquareArrowUp } from "react-icons/lu";
 import { AiOutlineUser } from "react-icons/ai";
 import { PiLinkSimpleBreakBold } from "react-icons/pi";
