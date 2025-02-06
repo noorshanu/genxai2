@@ -49,14 +49,14 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 lg:hidden z-20"
+          className="fixed inset-0 bg-[#1C1E22] lg:hidden z-20"
           onClick={() => setIsOpen(false)}
         />
       )}
 
       <div
         className={`fixed lg:static inset-y-0 left-0 w-64 transition-transform duration-200 ease-in-out z-30 
-          ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"} bg-gray-900`}
+          ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"} bg-[#1C1E22] border-r border-gray-600`}
       >
         <div className="flex flex-col h-full">
           {/* Logo */}

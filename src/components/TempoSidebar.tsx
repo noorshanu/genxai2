@@ -19,7 +19,7 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/50 lg:hidden z-20"
+          className="fixed inset-0 bg-[#1C1E22] lg:hidden z-20"
           onClick={() => setIsOpen(false)}
         />
       )}
