@@ -5,8 +5,6 @@ import React from 'react'
 function Profilemark() {
   return (
     <div className=' border-gray-500  border-b py-1 px-6 flex flex-col sm:flex-row items-center overflow-hidden'>
-
-  
       <div className='bg-[#35425A] rounded-lg p-2 flex mx-8  w-full gap-4 relative'>
         <div className=' flex gap-2 w-full'>
           <img src="images/nft3.png" alt="" className='h-full' />
@@ -29,9 +27,7 @@ function Profilemark() {
           5min ago
         </p>
       </div>
-      <div className=' w-4'
-      >
-
+      <div className=' w-4' >
       </div>
       <div className='bg-[#35425A] rounded-lg p-2 flex mx-7  w-full gap-4 relative'>
         <div className=' flex gap-2 w-full'>
@@ -55,9 +51,7 @@ function Profilemark() {
           5min ago
         </p>
       </div>
-      <div className=' w-4'
-      >
-
+      <div className=' w-4' >
       </div>
       <div className='bg-[#35425A] rounded-lg p-2 flex mx-7  w-full gap-4 relative'>
         <div className=' flex gap-2 w-full'>
@@ -81,13 +75,8 @@ function Profilemark() {
           5min ago
         </p>
       </div>
-      <div className=' w-4'
-      >
-
-      </div>
-     
-
- 
+      <div className=' w-4'>
+      </div>  
     </div>
   )
 }
