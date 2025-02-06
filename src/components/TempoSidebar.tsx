@@ -106,7 +106,7 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
                 {/* Disconnect Wallet */}
                 <li className="flex items-center space-x-3 bg-[#6D6BFF] cursor-pointer hover:bg-gray-700 p-2 mr-7 rounded-lg">
                   <PiLinkSimpleBreakBold className="text-base" />
-                  <span className="text-sm">connect Wallet</span>
+                  <a href="/list-agents" className="text-sm">connect Wallet</a>
                 </li>
                 <li className="flex items-center space-x-3 bg-[#6D6BFF] cursor-pointer hover:bg-gray-700 p-2 mr-7 rounded-lg">
                   <MdOutlineLogout className="text-base" />
