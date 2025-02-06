@@ -1,11 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 // components/layout/Sidebar.tsx
-import { FC } from "react";
+"use client";
+import { FC, useState } from "react";
 import { FiSun } from "react-icons/fi";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { PiLinkSimpleBreakBold } from "react-icons/pi";
+import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -13,6 +15,16 @@ interface SidebarProps {
 }
 
 const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
+  const [isOpens, setIsOpens] = useState(false);
+  const [selectedAgent, setSelectedAgent] = useState("Selected Agent");
+
+  const agents = [
+    "Agent 01",
+    "Agent 02",
+    "Agent 03",
+    "Agent 04",
+    "Agent 05",
+  ];
   return (
     <>
       {isOpen && (
@@ -36,22 +48,53 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
             />
           </div>
           <nav className="flex-1 overflow-y-auto py-2 space-y-2  mt-6 pr-[18px] ">
-            <a
-              href="/chat-genx"
-              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
+            <button
+              onClick={() => setIsOpens(!isOpens)}
+              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative w-full  "
             >
               <span className="text-xl z-10">
                 <img src="images/star.svg" alt="" className=" mr-12" />
               </span>
-              <span className="font-sf text-[#ffffff] font-bold z-10">
+              <span className="font-sf text-[#ffffff] font-bold z-10 mr-12">
                 Create
               </span>
+              <p>{isOpens ? <FaChevronUp /> : <FaChevronDown />}</p>
               <img
                 src="images/btn.png"
                 alt=""
                 className=" absolute top-0 left-0 right-0 mx-auto"
               />
-            </a>
+            </button>
+            {/* Dropdown Content */}
+            {isOpens && (
+              <div className="mt-2  rounded-md p-2 space-y-2 w-full ml-2">
+                {/* Static Create New button */}
+                <button className="w-full bg-gray-600 text-white py-2 rounded-md text-center ">
+                  Create New
+                </button>
+
+                {/* Selection List */}
+                {/* Select Dropdown */}
+                <div className=" pt-2 ">
+                  {/* <label className="block text-sm mb-1">Select Agent:</label> */}
+                  <select
+                    value={selectedAgent}
+                    onChange={(e) => setSelectedAgent(e.target.value)}
+                    className="w-full px-3 py-2 bg-[#000] text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  >
+                    {agents.map((agent, index) => (
+                      <option
+                        key={index}
+                        value={agent}
+                        className="bg-gray-700 text-white"
+                      >
+                        {agent}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+            )}
             <a
               href="/chat-genx"
               className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
