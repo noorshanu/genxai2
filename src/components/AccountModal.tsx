@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaPen, FaTimes, FaUpload, FaRegFileImage } from "react-icons/fa";
+import { IoIosCloseCircleOutline } from "react-icons/io";
 
 interface ModalProps {
   isOpen: boolean;
@@ -15,14 +16,14 @@ const AccountModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 backdrop-blur-sm"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
         >
           <motion.div
-            className="bg-gray-900 text-white w-[400px] md:w-[500px] rounded-lg shadow-lg p-6 relative"
+            className="bg-[#101114] text-white w-[400px] border-gray-500 border md:w-[500px] rounded-lg shadow-lg px-4 py-2 relative"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
@@ -30,25 +31,27 @@ const AccountModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           >
             {/* Close Button */}
             <button
-              className="absolute top-3 right-3 text-gray-400 hover:text-white"
+              className="absolute top-3 right-4 text-gray-400 hover:text-white"
               onClick={onClose}
             >
-              <FaTimes size={18} />
+              <IoIosCloseCircleOutline size={23} />
             </button>
 
             {/* Swap Between Account & Profile Picture Update */}
             {!isEditingPfp ? (
               /* Account Details */
               <div>
-                <h2 className="text-lg font-semibold mb-4">Account Details</h2>
-                <div className="relative w-16 h-16 bg-green-500 rounded-full mx-auto mb-4">
+                <h2 className="text-lg font-semibold mb-4 border-b border-gray-500 pb-5">Account Details</h2>
+         <div className=" flex gap-2 items-center">
+         <div className="relative w-16 h-16 bg-green-500 rounded-full mx-auto mb-4">
                   <FaPen
                     className="absolute bottom-0 right-0 bg-black p-1 rounded-full cursor-pointer"
                     size={16}
                     onClick={() => setIsEditingPfp(true)}
                   />
                 </div>
-                <input
+        <div>
+        <input
                   type="text"
                   placeholder="Full Name"
                   className="w-full bg-gray-800 text-white px-3 py-2 rounded-md mb-3"
@@ -58,6 +61,9 @@ const AccountModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                   placeholder="Username"
                   className="w-full bg-gray-800 text-white px-3 py-2 rounded-md mb-3"
                 />
+        </div>
+
+         </div>
                 <input
                   type="text"
                   placeholder="Email"

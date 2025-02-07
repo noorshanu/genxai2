@@ -11,7 +11,7 @@ const ChatInput: FC = () => {
         <input
           type="text"
           placeholder="Let the magic begin, Tell GenX your wish!..."
-          className="px-4 py-2 pr-16 bg-transparent border font-sf border-gray-800  text-gray-300 bg-white rounded-2xl focus:outline-none w-full "
+          className="px-4 py-2 pr-16 bg-transparent border font-sf border-gray-800  text-[#000] bg-white rounded-2xl focus:outline-none w-full "
         />
         <button className="absolute right-4 top-1/2 transform -translate-y-1/2">
           <img src="/images/send.png" alt="Send" className="w-6 h-6" />
