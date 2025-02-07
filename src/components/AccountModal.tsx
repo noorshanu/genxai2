@@ -66,12 +66,12 @@ const AccountModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
          </div>
                 <input
                   type="text"
-                  placeholder="Email"
+                  placeholder="Bio"
                   className="w-full bg-gray-800 text-white px-3 py-2 rounded-md mb-3"
                 />
                 <input
                   type="text"
-                  value="N34GJSH9ZXC2VPKFRWJ6T"
+                  value="Wallet Address"
                   readOnly
                   className="w-full bg-gray-800 text-white px-3 py-2 rounded-md mb-3"
                 />
@@ -85,6 +85,8 @@ const AccountModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                 <h2 className="text-lg font-semibold mb-4">Upload Profile Picture</h2>
                 <div className="border-2 border-dashed border-gray-600 rounded-md p-6 text-center">
                   <FaUpload size={30} className="text-gray-400 mx-auto mb-2" />
+                 
+                  <input type="file" className=" bg-transparent outline-none border-none" />
                   <p className="text-sm">Drop Your Files Here or <span className="text-blue-400 cursor-pointer">Browse</span></p>
                   <p className="text-xs text-gray-400">Max file size: 2 MB</p>
                 </div>
