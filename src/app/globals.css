@@ -162,3 +162,11 @@ background: radial-gradient(403.07% 261.28% at -70.97% 15.31%, #263248 0%, rgba(
   -ms-overflow-style: none; /* IE/Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+
+
+.agentbox{
+  border-radius: 6px;
+border: 1px solid #9C9AFF;
+background: radial-gradient(403.07% 261.28% at -70.97% 15.31%, #263248 0%, rgba(26, 26, 26, 0.10) 100%);
+}
