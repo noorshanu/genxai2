@@ -3,7 +3,7 @@
 
 export default function GenXAIComponent() {
   return (
-    <div className="bg-black text-white px-6 md:px-16 lg:px-32 pt-16  ">
+    <div className="bg-black text-white px-6 md:px-16 lg:px-32   ">
       {/* Header */}
       <div className="flex justify-center">
         <div className=" py-5 ">

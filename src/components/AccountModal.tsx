@@ -41,29 +41,30 @@ const AccountModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             {!isEditingPfp ? (
               /* Account Details */
               <div>
-                <h2 className="text-lg font-semibold mb-4 border-b border-gray-500 pb-5">Account Details</h2>
-         <div className=" flex gap-2 items-center">
-         <div className="relative w-16 h-16 bg-green-500 rounded-full mx-auto mb-4">
-                  <FaPen
-                    className="absolute bottom-0 right-0 bg-black p-1 rounded-full cursor-pointer"
-                    size={16}
-                    onClick={() => setIsEditingPfp(true)}
-                  />
+                <h2 className="text-lg font-semibold mb-4 border-b border-gray-500 pb-5">
+                  Account Details
+                </h2>
+                <div className=" flex gap-2 items-center">
+                  <div className="relative w-20 h-20 bg-green-500 rounded-full mx-auto mb-4">
+                    <FaPen
+                      className="absolute bottom-0 right-0 bg-black p-1 rounded-full cursor-pointer"
+                      size={16}
+                      onClick={() => setIsEditingPfp(true)}
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Full Name"
+                      className="w-full bg-gray-800 text-white px-3 py-2 rounded-md mb-3"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Username"
+                      className="w-full bg-gray-800 text-white px-3 py-2 rounded-md mb-3"
+                    />
+                  </div>
                 </div>
-        <div>
-        <input
-                  type="text"
-                  placeholder="Full Name"
-                  className="w-full bg-gray-800 text-white px-3 py-2 rounded-md mb-3"
-                />
-                <input
-                  type="text"
-                  placeholder="Username"
-                  className="w-full bg-gray-800 text-white px-3 py-2 rounded-md mb-3"
-                />
-        </div>
-
-         </div>
                 <input
                   type="text"
                   placeholder="Bio"
@@ -82,18 +83,26 @@ const AccountModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
             ) : (
               /* Profile Picture Update */
               <div>
-                <h2 className="text-lg font-semibold mb-4">Upload Profile Picture</h2>
-                <div className="border-2 border-dashed border-gray-600 rounded-md p-6 text-center">
+                <h2 className="text-lg font-semibold mb-4 border-b border-gray-500 pb-3">
+                  Upload Profile Picture
+                </h2>
+                <div className="border-2 border-dashed border-[#6D6BFF] rounded-md p-6 text-center">
                   <FaUpload size={30} className="text-gray-400 mx-auto mb-2" />
-                 
-                  <input type="file" className=" bg-transparent outline-none border-none" />
-                  <p className="text-sm">Drop Your Files Here or <span className="text-blue-400 cursor-pointer">Browse</span></p>
+
+                  <input
+                    type="file"
+                    className=" bg-transparent outline-none border-none"
+                  />
+                  <p className="text-sm">
+                    Drop Your Files Here or{" "}
+                    <span className="text-blue-400 cursor-pointer">Browse</span>
+                  </p>
                   <p className="text-xs text-gray-400">Max file size: 2 MB</p>
                 </div>
 
                 {/* Uploaded File Preview */}
                 <div className="mt-4 flex items-center justify-between bg-gray-700 p-2 rounded-md">
-                  <FaRegFileImage className="text-white" />
+                  <FaRegFileImage size={20} className="text-white bg-[#6D6BFF] p-1 text-lg " />
                   <span className="text-sm">example.jpg (0.1 MB)</span>
                   <FaTimes className="text-red-400 cursor-pointer" />
                 </div>
@@ -106,7 +115,7 @@ const AccountModal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                   >
                     Cancel
                   </button>
-                  <button className="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-md text-white">
+                  <button className="bg-[#6D6BFF] hover:bg-blue-500 px-4 py-1 rounded-md text-white">
                     Save
                   </button>
                 </div>
