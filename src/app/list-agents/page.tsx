@@ -26,10 +26,14 @@ function page() {
       <input
         type="text"
         placeholder="Search Agent"
-        className="px-4 py-2 rounded-lg bg-gray-700 text-white w-64 sm:w-80 focus:outline-none"
+        className="px-4 py-2 rounded-full bg-[#8494AD] text-[#fff] w-64 sm:w-80 focus:outline-none"
       />
-      <button className="px-4 py-2 bg-indigo-500 text-white rounded-lg">Enter</button>
+      <button className="px-4 py-2 bg-[#6663F6] text-white rounded-full ">Enter</button>
     </div>
+    </div>
+
+    <div>
+      
     </div>
 
 
