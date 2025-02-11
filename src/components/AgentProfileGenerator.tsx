@@ -15,10 +15,10 @@ const AgentProfileGenerator = () => {
   const [chain, setChain] = useState("");
   const chains = [
     { name: "Base", img: "images/Base.png" },
-    { name: "BSC", img: "bsc.png" },
-    { name: "AVAX", img: "avax.png" },
-    { name: "SOL", img: "sol.png" },
-    { name: "TRX", img: "trx.png" },
+    { name: "BSC", img: "images/bsc.png" },
+    { name: "AVAX", img: "images/ava.png" },
+    { name: "SOL", img: "images/sol.svg" },
+    { name: "TRX", img: "images/trx.svg" },
     { name: "ETH", img: "images/eth.svg" }
   ];
 
