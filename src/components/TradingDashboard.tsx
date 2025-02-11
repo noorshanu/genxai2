@@ -1,50 +1,39 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import {
-
-  FaUserCircle,
-  FaChartBar,
-  FaPaperPlane,
-} from 'react-icons/fa';
+import React from "react";
+import { FaUserCircle, FaChartBar, FaPaperPlane } from "react-icons/fa";
 
 const TradingDashboard: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen text-white">
       {/* Header / Title */}
-      <header className="p-4 border-b border-gray-700 flex items-center justify-between">
-        <div className="flex items-center space-x-4">
-          <img src="images/agent.png" alt="" />
-          <div>
-            <h1 className="text-xl font-bold">Agent XYZ</h1>
-            <p className="text-sm text-gray-400">#584AE | Production</p>
-          </div>
-        </div>
-        <div>
-          <button className="px-3 py-1 rounded bg-indigo-600 hover:bg-indigo-700">
-            <span className="font-medium">Follow Agent</span>
-          </button>
-        </div>
-      </header>
 
       {/* Main Body */}
       <div className="grid md:grid-cols-3 gap-4 p-4">
         {/* Left Column: Chart & Info */}
         <div className="md:col-span-2 space-y-4">
           {/* Chart Section */}
-          <div className="bg-gray-800 p-4 rounded">
+          <div className="p-4 rounded bg-[#1C1E22]">
             {/* Chart Header */}
             <div className="flex items-center justify-between mb-2">
+              <header className="p-4 flex items-center justify-between">
+                <div className="flex items-center space-x-4">
+                  <img src="images/agent.png" alt="" />
+                  <div>
+                    <h1 className="text-xl font-bold">Agent XYZ</h1>
+                    <p className="text-sm text-gray-400">#584AE | Production</p>
+                  </div>
+                </div>
+              </header>
               <div className="flex items-center space-x-2 text-sm">
                 <button className="px-2 py-1 bg-gray-700 rounded">15m</button>
                 <button className="px-2 py-1 bg-gray-700 rounded">1h</button>
                 <button className="px-2 py-1 bg-gray-700 rounded">1d</button>
                 <button className="px-2 py-1 bg-gray-700 rounded">...</button>
               </div>
-              <div className="text-gray-400 text-sm">Indicators | Price / MCAP</div>
             </div>
             {/* Dummy Chart */}
             <div className=" bg-gray-700 flex items-center justify-center rounded">
-         <img src="images/charty.png" alt="" />
+              <img src="images/charty.png" alt="" />
             </div>
           </div>
 
@@ -71,7 +60,8 @@ const TradingDashboard: React.FC = () => {
             </div>
             {/* Summary Text */}
             <p className="text-xs text-gray-400 mt-2">
-              GAI empowers AI agents to operate autonomously, processing inputs and generating responses while learning from past interactions.
+              GAI empowers AI agents to operate autonomously, processing inputs
+              and generating responses while learning from past interactions.
             </p>
           </div>
 
@@ -111,17 +101,28 @@ const TradingDashboard: React.FC = () => {
           {/* Trading Box */}
           <div className="bg-gray-800 p-4 rounded space-y-4">
             <div className="flex justify-between">
-              <button className="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700">Buy</button>
-              <button className="px-4 py-2 rounded bg-red-600 hover:bg-red-700">Sell</button>
+              <button className="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700">
+                Buy
+              </button>
+              <button className="px-4 py-2 rounded bg-red-600 hover:bg-red-700">
+                Sell
+              </button>
             </div>
 
             <div className="flex items-center justify-between text-sm">
-              <button className="py-1 text-gray-300 underline">Switch To PHITER</button>
-              <button className="py-1 text-gray-300 underline">Set Max Slippage</button>
+              <button className="py-1 text-gray-300 underline">
+                Switch To PHITER
+              </button>
+              <button className="py-1 text-gray-300 underline">
+                Set Max Slippage
+              </button>
             </div>
 
             <div className="mt-2">
-              <label className="block text-gray-400 text-xs mb-1" htmlFor="amount">
+              <label
+                className="block text-gray-400 text-xs mb-1"
+                htmlFor="amount"
+              >
                 Amount (SOL)
               </label>
               <div className="flex items-center space-x-2">
@@ -142,15 +143,25 @@ const TradingDashboard: React.FC = () => {
             {/* Bonding Curve & Ranking Progress */}
             <div className="text-sm space-y-2">
               <div className="mt-4">
-                <p className="text-gray-400 mb-1">Bonding Curve Progress: 30%</p>
+                <p className="text-gray-400 mb-1">
+                  Bonding Curve Progress: 30%
+                </p>
                 <div className="w-full bg-gray-700 h-2 rounded">
-                  <div className="bg-indigo-500 h-2 rounded" style={{ width: '30%' }}></div>
+                  <div
+                    className="bg-indigo-500 h-2 rounded"
+                    style={{ width: "30%" }}
+                  ></div>
                 </div>
               </div>
               <div className="mt-2">
-                <p className="text-gray-400 mb-1">Top 10 Ranking Progress: 60%</p>
+                <p className="text-gray-400 mb-1">
+                  Top 10 Ranking Progress: 60%
+                </p>
                 <div className="w-full bg-gray-700 h-2 rounded">
-                  <div className="bg-green-500 h-2 rounded" style={{ width: '60%' }}></div>
+                  <div
+                    className="bg-green-500 h-2 rounded"
+                    style={{ width: "60%" }}
+                  ></div>
                 </div>
               </div>
             </div>
@@ -185,15 +196,21 @@ const TradingDashboard: React.FC = () => {
             <div className="flex-grow space-y-2 overflow-auto text-sm">
               <div className="flex items-center justify-between bg-gray-700 px-2 py-1 rounded">
                 <span>Chat Guy</span>
-                <span className="text-gray-400 text-xs">alammohd - 15 mins ago</span>
+                <span className="text-gray-400 text-xs">
+                  alammohd - 15 mins ago
+                </span>
               </div>
               <div className="flex items-center justify-between bg-gray-700 px-2 py-1 rounded">
                 <span className="font-bold">Selected Agent</span>
-                <span className="text-gray-400 text-xs">Navin - 10 mins ago</span>
+                <span className="text-gray-400 text-xs">
+                  Navin - 10 mins ago
+                </span>
               </div>
               <div className="flex items-center justify-between bg-gray-700 px-2 py-1 rounded">
                 <span>Chat Guy</span>
-                <span className="text-gray-400 text-xs">alammohd - 5 mins ago</span>
+                <span className="text-gray-400 text-xs">
+                  alammohd - 5 mins ago
+                </span>
               </div>
               {/* Add more messages as desired */}
             </div>
