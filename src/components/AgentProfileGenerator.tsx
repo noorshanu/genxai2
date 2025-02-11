@@ -109,7 +109,7 @@ const AgentProfileGenerator = () => {
           ))}
             </div>
             <button className="bg-[#0047FF] p-2 rounded-lg mt-4 w-full flex items-center justify-center gap-2">
-              <FaSquareVimeo /> Save
+             Save
             </button>
           </div>
           <button className="bg-[#0047FF] p-3 rounded-lg mt-6 w-full max-w-lg mx-auto flex justify-center">
@@ -122,31 +122,33 @@ const AgentProfileGenerator = () => {
    
 
       {/* Optional Links */}
-      <div className="mt-6 flex flex-col sm:flex-row gap-4 w-full justify-between items-center mx-auto">
+      <div className="mt-6 flex flex-col sm:flex-row gap-4 w-full justify-between items-center mx-auto border-b border-gray-500 pb-8" >
         <div className="relative">
           <label htmlFor="">Telegram Link (Optional)</label>
           <input
             type="text"
             placeholder=""
-            className="w-full p-2 bg-gray-800 rounded-lg focus:outline-none"
+            className="w-full p-2 bg-transparent border border-[#505B74] mt-2 rounded-lg focus:outline-none"
           />
-          <FaTelegram className="absolute left-3 top-9 text-gray-400" />
+          <FaTelegram className="absolute left-3 top-11 text-gray-400" />
         </div>
         <div className="relative">
+          <label htmlFor="">Twitter/X Link (Optional)</label>
           <input
             type="text"
-            placeholder="Twitter/X Link (Optional)"
-            className="w-full p-2 bg-gray-800 rounded-lg focus:outline-none"
+            placeholder=""
+            className="w-full p-2 bg-transparent border border-[#505B74] mt-2 rounded-lg focus:outline-none"
           />
-          <FaXTwitter className="absolute right-3 top-3 text-gray-400" />
+          <FaXTwitter className="absolute left-3 top-11 text-gray-400" />
         </div>
         <div className="relative">
+          <label htmlFor="">Website Link (Optional)</label>
           <input
             type="text"
-            placeholder="Website Link (Optional)"
-            className="w-full p-2 bg-gray-800 rounded-lg focus:outline-none"
+            placeholder=""
+            className="w-full p-2 bg-transparent border border-[#505B74] mt-2 rounded-lg  focus:outline-none"
           />
-          <FaGlobe className="absolute right-3 top-3 text-gray-400" />
+          <FaGlobe className="absolute left-3 top-11 text-gray-400" />
         </div>
       </div>
     </div>
