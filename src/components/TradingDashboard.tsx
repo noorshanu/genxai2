@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { FaUserCircle, FaChartBar, FaPaperPlane } from "react-icons/fa";
+import {  FaPaperPlane } from "react-icons/fa";
 
 const TradingDashboard: React.FC = () => {
   return (

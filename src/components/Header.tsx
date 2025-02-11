@@ -5,9 +5,11 @@ import { FaRegBell } from "react-icons/fa";
 import { IoInformationCircleOutline } from "react-icons/io5";
 interface HeaderProps {
   onMenuClick: () => void;
+  className?: string; 
 }
 
-const Header: FC<HeaderProps> = ({ onMenuClick }) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Header: FC<HeaderProps> = ({ onMenuClick ,className}) => {
   return (
     <header className=" border-[#505B74] bg-[#1C1E22] border-b-[0.5px] px-4 py-3">
       <div className="flex items-center justify-between">

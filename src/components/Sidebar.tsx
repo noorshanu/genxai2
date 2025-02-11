@@ -12,6 +12,7 @@ import AccountModal from "./AccountModal";
 interface SidebarProps {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
+  className?: string;
 }
 
 const agents = ["Agent 01", "Agent 02", "Agent 03", "Agent 04", "Agent 05"];
@@ -44,7 +45,8 @@ const Dropdown: FC<{
   );
 };
 
-const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen ,className}) => {
   const [selectedAgent, setSelectedAgent] = useState("Agent 01");
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (

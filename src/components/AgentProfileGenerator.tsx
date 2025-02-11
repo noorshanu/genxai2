@@ -3,7 +3,7 @@
 import { useState } from "react";
 import {
   FaCopy,
-  FaSquareVimeo,
+
   FaTelegram,
   FaXTwitter,
   FaGlobe,
@@ -90,7 +90,7 @@ const AgentProfileGenerator = () => {
             <FaCopy className="absolute right-3 bottom-3 text-gray-400 cursor-pointer" />
           </div>
           <p className=" text-center text-xs text-gray-600">
-        "Data is generated based on your final inputs. Once saved, it cannot be regenerated!"
+        Data is generated based on your final inputs. Once saved, it cannot be regenerated!
         </p>
         </div>
         <div className=" w-[350px]">
