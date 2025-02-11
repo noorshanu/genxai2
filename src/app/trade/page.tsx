@@ -1,4 +1,5 @@
 import NewLayout from '@/components/NewLayout'
+import TradingDashboard from '@/components/TradingDashboard'
 import React from 'react'
 
 function page() {
@@ -7,7 +8,7 @@ function page() {
    <NewLayout>
 
     <div>
-        trade
+        <TradingDashboard/>
     </div>
    </NewLayout>
    </>
