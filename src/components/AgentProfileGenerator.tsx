@@ -38,7 +38,7 @@ const AgentProfileGenerator = () => {
         </div>
 
         {/* Input Fields */}
-        <div className="flex flex-col gap-4 w-full max-w-lg">
+        <div className="flex flex-col gap-2 w-full max-w-lg">
           <div className="flex items-center gap-4">
             <div className="relative w-full ">
               <input
@@ -50,32 +50,41 @@ const AgentProfileGenerator = () => {
               />
               <FaCopy className="absolute right-3 top-3 text-gray-400 cursor-pointer" />
             </div>
-            <button className="bg-[#6D6BFF] p-2 rounded-lg text-sm">
+            <button className="bg-[#6D6BFF] p-2 rounded-lg text-[10px]">
               Generate Address
             </button>
           </div>
-  <div className=" flex items-center justify-between gap-4">
-  <div className="relative w-full">
-            <input
-              type="text"
-              placeholder="Ticker"
-              value={ticker}
-              onChange={(e) => setTicker(e.target.value)}
-              className="w-full p-2 bg-gray-800 rounded-lg focus:outline-none"
-            />
-            <FaCopy className="absolute right-3 top-3 text-gray-400 cursor-pointer" />
+          <div className=" flex items-center justify-between gap-4">
+            <div className="relative w-full">
+              <input
+                type="text"
+                placeholder="Ticker"
+                value={ticker}
+                onChange={(e) => setTicker(e.target.value)}
+                className="w-full p-2 bg-gray-800 rounded-lg focus:outline-none"
+              />
+              <FaCopy className="absolute right-3 top-3 text-gray-400 cursor-pointer" />
+            </div>
+
+            <button className="bg-purple-600 p-2 rounded-lg text-[10px]">
+              Generate Ticker
+            </button>
           </div>
 
-          <button className="bg-purple-600 p-2 rounded-lg text-sm">
-            Generate Ticker
-          </button>
+          <h1>
+            About your AiAgent
+          </h1>
 
-  </div>
+          <div className=" profilebox p-2 relative ">
+
+            <p>
+            Lörem ipsum margaretha Mattsson seska det mörka nätet. Kat tykast visess dere dopögt Björn Månsson.  Bidende polytins ukan antenytrens i anagram fast bjudkaffe. Trerade avis.  On Hans Lundgren sektig som hexatäktigt. Heteropol sebel realog såväl som nis ohore. .
+            </p>
+            <FaCopy className="absolute right-3 bottom-3 text-gray-400 cursor-pointer" />
+          </div>
         </div>
-      </div>
-
-      {/* Chain Selection */}
-      <div className="bg-gray-900 p-4 rounded-xl mt-6 w-full max-w-lg mx-auto">
+<div>
+<div className="bg-gray-900 p-4 rounded-xl mt-6 w-full max-w-lg mx-auto">
         <h2 className="text-lg font-bold">Select your chain for Launch</h2>
         <div className="flex gap-4 mt-4 flex-wrap">
           {chains.map((c) => (
@@ -94,6 +103,14 @@ const AgentProfileGenerator = () => {
           <FaSquareVimeo /> Save
         </button>
       </div>
+      <button className="bg-purple-600 p-3 rounded-lg mt-6 w-full max-w-lg mx-auto flex justify-center">
+        Generate Profile
+      </button>
+</div>
+      </div>
+
+      {/* Chain Selection */}
+   
 
       {/* Optional Links */}
       <div className="mt-6 flex flex-col gap-4 w-full max-w-lg mx-auto">
@@ -123,9 +140,7 @@ const AgentProfileGenerator = () => {
         </div>
       </div>
 
-      <button className="bg-purple-600 p-3 rounded-lg mt-6 w-full max-w-lg mx-auto flex justify-center">
-        Generate Profile
-      </button>
+   
     </div>
   );
 };
