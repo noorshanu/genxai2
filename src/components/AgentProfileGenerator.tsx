@@ -14,12 +14,12 @@ const AgentProfileGenerator = () => {
   const [ticker, setTicker] = useState("");
   const [chain, setChain] = useState("");
   const chains = [
-    { name: "Base", img: "base.png" },
+    { name: "Base", img: "images/Base.png" },
     { name: "BSC", img: "bsc.png" },
     { name: "AVAX", img: "avax.png" },
     { name: "SOL", img: "sol.png" },
     { name: "TRX", img: "trx.png" },
-    { name: "ETH", img: "eth.png" }
+    { name: "ETH", img: "images/eth.svg" }
   ];
 
   return (
@@ -44,7 +44,7 @@ const AgentProfileGenerator = () => {
         </div>
 
         {/* Input Fields */}
-        <div className="flex flex-col gap-2 w-full max-w-lg">
+        <div className="flex flex-col gap-2 w-full max-w-xl">
           <div className="flex items-center gap-4">
             <div className="relative w-full ">
               <input
@@ -56,7 +56,7 @@ const AgentProfileGenerator = () => {
               />
               <FaCopy className="absolute right-3 top-3 text-gray-400 cursor-pointer" />
             </div>
-            <button className="bg-[#0047FF] p-2 rounded-lg text-[10px]">
+            <button className="bg-[#0047FF] p-2 rounded-lg text-[12px] w-[140px]">
               Generate Address
             </button>
           </div>
@@ -72,7 +72,7 @@ const AgentProfileGenerator = () => {
               <FaCopy className="absolute right-3 top-3 text-gray-400 cursor-pointer" />
             </div>
 
-            <button className="bg-[#0047FF] p-2 rounded-lg text-[10px]">
+            <button className="bg-[#0047FF] p-2 rounded-lg text-[12px] w-[140px]">
               Generate Ticker
             </button>
           </div>
@@ -93,17 +93,17 @@ const AgentProfileGenerator = () => {
         "Data is generated based on your final inputs. Once saved, it cannot be regenerated!"
         </p>
         </div>
-        <div>
-          <div className="bg-gray-900 p-4 rounded-xl  w-full max-w-lg mx-auto">
+        <div className=" w-[350px]">
+          <div className="bg-gray-900 p-4 rounded-xl  w-full  mx-auto">
             <h2 className="text-lg font-bold">Select your chain for Launch</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4 flex-wrap">
             {chains.map((c) => (
             <button 
               key={c.name} 
               onClick={() => setChain(c.name)} 
-              className={`p-2 rounded-lg flex flex-col justify-center items-center gap-2 ${chain === c.name ? "bg-purple-600" : "bg-gray-800"}`}
+              className={`p-2 rounded-lg flex flex-col justify-center items-center gap-2 text-[10px] ${chain === c.name ? "bg-purple-600" : "bg-gray-800"}`}
             >
-              <img src={c.img} alt={c.name} className="w-6 h-6" />
+              <img src={c.img} alt={c.name} className="w-6 h-6 " />
               {c.name}
             </button>
           ))}
