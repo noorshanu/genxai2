@@ -170,3 +170,9 @@ background: radial-gradient(403.07% 261.28% at -70.97% 15.31%, #263248 0%, rgba(
 border: 1px solid #9C9AFF;
 background: radial-gradient(403.07% 261.28% at -70.97% 15.31%, #263248 0%, rgba(26, 26, 26, 0.10) 100%);
 }
+
+.profilebox{
+  border-radius: 12.66px;
+background: var(--ffffff, rgba(255, 255, 255, 0.10));
+backdrop-filter: blur(6.329966068267822px);
+}

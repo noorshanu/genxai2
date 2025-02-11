@@ -51,7 +51,7 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
               <img src="images/btn.png" alt="" className=" absolute top-0 left-0 right-0 mx-auto" />
             </a>
             <a
-              href="/chat-genx"
+              href="/generate"
               className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
             >
               <span className="text-xl z-10">
@@ -64,7 +64,7 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
             </a>
 
             <a
-              href="/chat-genx"
+              href="/trade"
               className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
             >
               <span className="text-xl z-10">
