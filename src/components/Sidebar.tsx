@@ -29,14 +29,14 @@ const Dropdown: FC<{
     <div className="w-full">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex justify-between items-center w-full rounded-lg px-4 py-2 relative"
+        className="flex justify-between items-center w-full rounded-lg px-4 py-2 relative bg-[#0047FF] border-[0.5px] border-[#9C9AFF]"
       >
         <span className="flex items-center gap-2">
           <img src={icon} alt="" className="w-6 h-6 mr-12 z-20" />
           <span className="font-sf text-white font-bold z-20">{title}</span>
         </span>
         {isOpen ? <FaChevronUp /> : <FaChevronDown />}
-        <img src="images/btn.png" alt="" className="absolute inset-0 mx-auto" />
+        {/* <img src="images/btn.png" alt="" className="absolute inset-0 mx-auto" /> */}
       </button>
 
       {isOpen && <div className="mt-2 rounded-md p-2 space-y-2">{children}</div>}
