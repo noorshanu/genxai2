@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import {
 
@@ -12,7 +13,7 @@ const TradingDashboard: React.FC = () => {
       {/* Header / Title */}
       <header className="p-4 border-b border-gray-700 flex items-center justify-between">
         <div className="flex items-center space-x-4">
-          <FaUserCircle className="text-3xl text-indigo-400" />
+          <img src="images/agent.png" alt="" />
           <div>
             <h1 className="text-xl font-bold">Agent XYZ</h1>
             <p className="text-sm text-gray-400">#584AE | Production</p>
@@ -42,9 +43,8 @@ const TradingDashboard: React.FC = () => {
               <div className="text-gray-400 text-sm">Indicators | Price / MCAP</div>
             </div>
             {/* Dummy Chart */}
-            <div className="h-48 bg-gray-700 flex items-center justify-center rounded">
-              <FaChartBar className="text-4xl text-gray-500" />
-              <span className="ml-2">[Dummy Chart Here]</span>
+            <div className=" bg-gray-700 flex items-center justify-center rounded">
+         <img src="images/charty.png" alt="" />
             </div>
           </div>
 
