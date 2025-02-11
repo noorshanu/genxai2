@@ -5,6 +5,7 @@ import React from 'react'
 import Footer from '@/components/Footer'
 import Profilemark from '@/components/Profilemark'
 import AgentDetails from '@/components/AgentDetails'
+import AgentSearch from '@/components/AgentSearch'
 
 function page() {
   return (
@@ -32,7 +33,8 @@ function page() {
     </div>
     </div>
 
-    <div>
+    <div className=' px-4 '>
+      <AgentSearch/>
       
     </div>
 
