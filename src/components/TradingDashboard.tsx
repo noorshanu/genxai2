@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState } from "react";
-import { FaCopy } from "react-icons/fa";
-import { GiWolfHead } from "react-icons/gi";
+import { FaCopy, FaInfoCircle } from "react-icons/fa";
+import { GiTreeBranch, GiWolfHead } from "react-icons/gi";
 import { SiFurrynetwork } from "react-icons/si";
 import { FaPaperPlane } from "react-icons/fa";
 
@@ -49,65 +49,89 @@ const TradingDashboard: React.FC = () => {
                       </button>
 
                       {/* Icons */}
-                      <button className="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full">
+                      <button className="w-8 h-8 flex items-center justify-center   rounded-full">
                         <GiWolfHead className="text-gray-400" />
                       </button>
-                      <button className="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full">
+                      <button className="w-8 h-8 flex items-center justify-center   rounded-full">
                         <SiFurrynetwork className="text-purple-400" />
                       </button>
                     </div>
                   </div>
                 </div>
               </header>
-              <div className="flex items-center space-x-2 text-sm">
-                <button className="px-2 py-1 bg-gray-700 rounded">15m</button>
-                <button className="px-2 py-1 bg-gray-700 rounded">1h</button>
-                <button className="px-2 py-1 bg-gray-700 rounded">1d</button>
-                <button className="px-2 py-1 bg-gray-700 rounded">...</button>
-              </div>
+              <div className="flex justify-between space-x-6  text-gray-300">
+      {/* 24h Vol */}
+      <div className="text-center">
+        <p className="text-gray-500 text-xs">24h Vol</p>
+        <p className="text-sm font-semibold">$1.9m</p>
+      </div>
+
+      {/* Market Cap */}
+      <div className="text-center">
+        <p className="text-gray-500 text-xs">Market Cap</p>
+        <p className="text-sm font-semibold">$48.5m</p>
+      </div>
+
+      {/* Created At */}
+      <div className="text-center">
+        <p className="text-gray-500 text-xs">Created At</p>
+        <p className="text-sm font-semibold">4 months ago</p>
+      </div>
+    </div>
             </div>
             {/* Dummy Chart */}
             <div className=" bg-gray-700 flex items-center justify-center rounded">
               <img src="images/charty.png" alt="" />
             </div>
+
+
+
+            <div className="flex justify-between space-x-4  py-4 ">
+      {/* Mindshare */}
+      <div className="flex flex-col items-start   text-gray-300 px-6 py-3 rounded-lg border border-gray-600 w-1/5">
+        <div className="flex items-center space-x-1 text-gray-500">
+          <span>Mindshare</span>
+          <FaInfoCircle className="text-gray-500" />
+        </div>
+        <p className="text-lg font-semibold">0.32%</p>
+      </div>
+
+      {/* Impressions */}
+      <div className="flex flex-col items-start   text-gray-300 px-6 py-3 rounded-lg border border-gray-600 w-1/5">
+        <p className="text-gray-500">Impressions</p>
+        <p className="text-lg font-semibold">68,619</p>
+      </div>
+
+      {/* Engagement */}
+      <div className="flex flex-col items-start   text-gray-300 px-6 py-3 rounded-lg border border-gray-600 w-1/5">
+        <p className="text-gray-500">Engagement</p>
+        <p className="text-lg font-semibold">1,279</p>
+      </div>
+
+      {/* Followers */}
+      <div className="flex flex-col items-start   text-gray-300 px-6 py-3 rounded-lg border border-gray-600 w-1/5">
+        <p className="text-gray-500">Followers</p>
+        <p className="text-lg font-semibold">11,608</p>
+      </div>
+
+      {/* Top Tweets */}
+      <div className="flex items-center justify-between   text-gray-300 px-6 py-3 rounded-lg border border-gray-600 w-1/5">
+        <p className="text-gray-500">Top Tweets</p>
+        <GiTreeBranch className="text-white text-xl bg-gray-700 p-1 rounded-full" />
+      </div>
+    </div>
           </div>
 
-          {/* Info Metrics */}
-          <div className="bg-gray-800 p-4 rounded space-y-2">
-            <h2 className="text-lg font-semibold mb-2">Influence Metrics</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-              <div className="space-y-1">
-                <p className="text-gray-400">Monarchy</p>
-                <p className="font-bold">0.32%</p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-gray-400">Engagement</p>
-                <p className="font-bold">68,199</p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-gray-400">Resources</p>
-                <p className="font-bold">1,270</p>
-              </div>
-              <div className="space-y-1">
-                <p className="text-gray-400">Followers</p>
-                <p className="font-bold">11,608</p>
-              </div>
-            </div>
-            {/* Summary Text */}
-            <p className="text-xs text-gray-400 mt-2">
-              GAI empowers AI agents to operate autonomously, processing inputs
-              and generating responses while learning from past interactions.
-            </p>
-          </div>
-
+       
+  
           {/* Agent Trades Table */}
-          <div className="bg-gray-800 p-4 rounded">
+          <div className="  p-4 rounded">
             <h2 className="text-lg font-semibold mb-2">Agent Trades</h2>
             <div className="overflow-auto">
-              <table className="w-full text-left text-sm">
+              <table className="w-full text-left bg-[#263248] rounded-lg px-2 text-sm">
                 <thead>
                   <tr className="border-b border-gray-700">
-                    <th className="py-2">Account</th>
+                    <th className="py-2 px-2">Account</th>
                     <th className="py-2">Type</th>
                     <th className="py-2">SOL</th>
                     <th className="py-2">$TOKEN</th>
@@ -117,7 +141,7 @@ const TradingDashboard: React.FC = () => {
                 </thead>
                 <tbody>
                   <tr className="border-b border-gray-700">
-                    <td className="py-2">@Navin</td>
+                    <td className="py-2 px-2">@Navin</td>
                     <td className="py-2 text-red-400">Sell</td>
                     <td className="py-2">0.5</td>
                     <td className="py-2">182,234</td>
@@ -134,7 +158,7 @@ const TradingDashboard: React.FC = () => {
         {/* Right Column: Trading Box & Stats */}
         <div className="space-y-4">
           {/* Trading Box */}
-          <div className="bg-gray-800 p-4 rounded space-y-4">
+          <div className="  p-4 rounded space-y-4">
             <div className="flex justify-between">
               <button className="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700">
                 Buy
@@ -203,7 +227,7 @@ const TradingDashboard: React.FC = () => {
           </div>
 
           {/* Token Data */}
-          <div className="bg-gray-800 p-4 rounded text-sm">
+          <div className="  p-4 rounded text-sm">
             <p className="mb-1">Token Data</p>
             <ul className="space-y-1">
               <li className="flex justify-between">
@@ -226,7 +250,7 @@ const TradingDashboard: React.FC = () => {
           </div>
 
           {/* Global Chats */}
-          <div className="bg-gray-800 p-4 rounded flex flex-col h-72">
+          <div className="  p-4 rounded flex flex-col h-72">
             <h2 className="text-lg font-semibold mb-2">Global Chats</h2>
             <div className="flex-grow space-y-2 overflow-auto text-sm">
               <div className="flex items-center justify-between bg-gray-700 px-2 py-1 rounded">
