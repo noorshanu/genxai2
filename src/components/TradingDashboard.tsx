@@ -1,8 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
-import {  FaPaperPlane } from "react-icons/fa";
+"use client";
+import { useState } from "react";
+import { FaCopy } from "react-icons/fa";
+import { GiWolfHead } from "react-icons/gi";
+import { SiFurrynetwork } from "react-icons/si";
+import { FaPaperPlane } from "react-icons/fa";
 
 const TradingDashboard: React.FC = () => {
+  const [wallet] = useState("0x1C4C...F463a3");
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(wallet);
+    alert("Copied to clipboard!");
+  };
   return (
     <div className="min-h-screen text-white">
       {/* Header / Title */}
@@ -19,8 +29,33 @@ const TradingDashboard: React.FC = () => {
                 <div className="flex items-center space-x-4">
                   <img src="images/agent.png" alt="" />
                   <div>
-                    <h1 className="text-xl font-bold">Agent XYZ</h1>
-                    <p className="text-sm text-gray-400">#584AE | Production</p>
+                    <h1 className="text-xl font-bold">
+                      Agent XYZ{" "}
+                      <span className=" text-gray-600 text-sm">$GAME</span>
+                    </h1>
+                    <div className="flex items-center space-x-3 mt-1">
+                      {/* Wallet Address */}
+                      <div className="flex items-center space-x-2 bg-transparent border border-gray-500 px-3 py-1 rounded-lg text-gray-300">
+                        <span className=" text-xs">{wallet}</span>
+                        <FaCopy
+                          className="text-gray-400 cursor-pointer"
+                          onClick={copyToClipboard}
+                        />
+                      </div>
+
+                      {/* Category Button */}
+                      <button className="bg-transparent border border-gray-500 text-xs px-3 py-1 rounded-lg text-gray-300">
+                        Productivity
+                      </button>
+
+                      {/* Icons */}
+                      <button className="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full">
+                        <GiWolfHead className="text-gray-400" />
+                      </button>
+                      <button className="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full">
+                        <SiFurrynetwork className="text-purple-400" />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </header>

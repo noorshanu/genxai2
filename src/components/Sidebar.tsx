@@ -71,8 +71,8 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen ,className}) => {
           {/* Navigation */}
           <nav className="flex-1 overflow-y-auto py-4 space-y-4 px-3">
             {/* Create Dropdown */}
-            <Dropdown title="Create" icon="images/star.svg">
-              <button className="w-full bg-gray-600 text-white py-2 rounded-md text-center ">
+            <Dropdown title="Create" icon="images/robo.svg">
+              <button className="w-full bg-gray-600 text-white py-2 font-medium rounded-md text-center ">
                 Create New
               </button>
               <select
@@ -89,8 +89,8 @@ const Sidebar: FC<SidebarProps> = ({ isOpen, setIsOpen ,className}) => {
             </Dropdown>
 
             {/* Generate Dropdown */}
-            <Dropdown title="Generate" icon="images/msg.svg">
-              <button className="w-full bg-gray-600 text-white py-2 rounded-md text-center">
+            <Dropdown title="Generate" icon="images/set.svg">
+              <button className="w-full bg-gray-600 text-white font-medium py-2 rounded-md text-center">
                 Selected Agent Profiling
               </button>
             </Dropdown>
