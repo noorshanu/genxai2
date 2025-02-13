@@ -30,7 +30,7 @@ export default function GenXAIComponent() {
             <h2 className="text-base font-semibold mb-4 ">Create</h2>
           </div>
           <ul className="space-y-3  newbox p-3">
-            <li className="subbox px-4 py-2 rounded-lg text-sm text-start">
+            <li className="bg-[#0047FF] border-[0.5px] border-[#9C9AFF] px-4 py-2 rounded-lg text-sm text-start">
               Set up AI Agents and tokens effortlessly with AI-driven tools.
             </li>
             <li className=" text-sm p-3 rounded-lg text-start"></li>
@@ -50,7 +50,7 @@ export default function GenXAIComponent() {
             <h2 className="text-base font-semibold mb-4 ">Generate</h2>
           </div>
           <ul className="space-y-3  newbox p-3">
-          <li className="subbox px-4 py-2 rounded-lg text-sm text-start">
+          <li className="bg-[#0047FF] border-[0.5px] border-[#9C9AFF] px-4 py-2 rounded-lg text-sm text-start">
               Set up AI Agents and tokens effortlessly with AI-driven tools.
             </li>
             <li className=" text-sm p-3 rounded-lg text-start"></li>
@@ -70,7 +70,7 @@ export default function GenXAIComponent() {
             <h2 className="text-base font-semibold mb-4 ">Trade</h2>
           </div>
           <ul className="space-y-3  newbox p-3">
-          <li className="subbox px-4 py-2 rounded-lg text-sm text-start">
+          <li className="bg-[#0047FF] border-[0.5px] border-[#9C9AFF] px-4 py-2 rounded-lg text-sm text-start">
               Set up AI Agents and tokens effortlessly with AI-driven tools.
             </li>
             <li className=" text-sm p-3 rounded-lg text-start"></li>

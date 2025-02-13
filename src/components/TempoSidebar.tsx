@@ -40,32 +40,32 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
           <nav className="flex-1 overflow-y-auto py-2 space-y-2  mt-6 pr-[18px] ">
             <a
               href="/chat-genx"
-              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
+              className="flex justify-start items-center  rounded-lg mx-2 py-2 px-4 relative bg-[#0047FF] border-[0.5px] border-[#9C9AFF]  "
             >
               <span className="text-xl z-10">
-                <img src="images/star.svg" alt="" className=" mr-12" />
+                <img src="images/robo.svg" alt="" className=" mr-12" />
               </span>
               <span className="font-sf text-[#ffffff] font-bold z-10">
                 Create
               </span>
-              <img src="images/btn.png" alt="" className=" absolute top-0 left-0 right-0 mx-auto" />
+             
             </a>
             <a
               href="/generate"
-              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
+              className="flex justify-start items-center  rounded-lg mx-2 py-2 px-4 relative bg-[#0047FF] border-[0.5px] border-[#9C9AFF]  "
             >
               <span className="text-xl z-10">
-                <img src="images/msg.svg" alt="" className=" mr-12" />
+                <img src="images/set.svg" alt="" className=" mr-12" />
               </span>
-              <span className="font-sf text-[#ffffff] font-bold z-10">
+              <span className="font-sf text-[#ffffff] font-bold z-10 ">
                 Generate
               </span>
-              <img src="images/btn.png" alt="" className=" absolute top-0 left-0 right-0 mx-auto" />
+          
             </a>
 
             <a
               href="/trade"
-              className="flex justify-start  rounded-lg mx-2 py-2 px-4 relative  "
+              className="flex justify-start items-center  rounded-lg mx-2 py-2 px-4 relative bg-[#0047FF] border-[0.5px] border-[#9C9AFF]  "
             >
               <span className="text-xl z-10">
                 <img src="images/chart.svg" alt="" className=" mr-12" />
@@ -73,7 +73,7 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
               <span className="font-sf text-[#ffffff] font-bold z-10">
                 Trade
               </span>
-              <img src="images/btn.png" alt="" className=" absolute top-0 left-0 right-0 mx-auto" />
+             
             </a>
           </nav>
           <div className="relative pb-3 border-t border-gray-400 px-4">
@@ -104,14 +104,11 @@ const TempoSidebar: FC<SidebarProps> = ({ isOpen, setIsOpen }) => {
                 </li>
 
                 {/* Disconnect Wallet */}
-                <li className="flex items-center space-x-3 bg-[#6D6BFF] cursor-pointer hover:bg-gray-700 p-2 mr-7 rounded-lg">
+                <li className="flex items-center space-x-3 bg-[#0047FF] border-[0.5px] border-[#9C9AFF] cursor-pointer hover:bg-gray-700 p-2 mr-7 rounded-lg">
                   <PiLinkSimpleBreakBold className="text-base" />
                   <a href="/list-agents" className="text-sm">connect Wallet</a>
                 </li>
-                <li className="flex items-center space-x-3 bg-[#6D6BFF] cursor-pointer hover:bg-gray-700 p-2 mr-7 rounded-lg">
-                  <MdOutlineLogout className="text-base" />
-                  <span className="text-sm">Disconnect Wallet</span>
-                </li>
+       
               </ul>
             </div>
           </div>
