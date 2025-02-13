@@ -195,12 +195,14 @@ const TradingDashboard: React.FC = () => {
               </div>
             </div>
 
-            <button className="w-full mt-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded font-semibold">
+            <button className="w-full mt-4 py-2 bg-[#0047FF] hover:bg-indigo-700 rounded font-semibold">
               Place Trade
             </button>
 
-            {/* Bonding Curve & Ranking Progress */}
-            <div className="text-sm space-y-2">
+  
+          </div>
+                    {/* Bonding Curve & Ranking Progress */}
+                    <div className="text-sm space-y-2">
               <div className="mt-4">
                 <p className="text-gray-400 mb-1">
                   Bonding Curve Progress: 30%
@@ -224,7 +226,6 @@ const TradingDashboard: React.FC = () => {
                 </div>
               </div>
             </div>
-          </div>
 
           {/* Token Data */}
           <div className=" bg-[#263248] p-4 rounded text-sm">
