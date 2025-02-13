@@ -158,21 +158,21 @@ const TradingDashboard: React.FC = () => {
         {/* Right Column: Trading Box & Stats */}
         <div className="space-y-4">
           {/* Trading Box */}
-          <div className="  p-4 rounded space-y-4">
-            <div className="flex justify-between">
-              <button className="px-4 py-2 rounded bg-blue-600 hover:bg-blue-700">
+          <div className=" bg-[#263248] p-4 rounded space-y-4">
+            <div className="flex gap-5 justify-between">
+              <button className="px-4 py-2 rounded bg-[#0047FF] hover:bg-blue-700 w-full">
                 Buy
               </button>
-              <button className="px-4 py-2 rounded bg-red-600 hover:bg-red-700">
+              <button className="px-4 py-2 rounded bg-[#1C1E22] hover:bg-red-700 text-gray-500 w-full">
                 Sell
               </button>
             </div>
 
             <div className="flex items-center justify-between text-sm">
-              <button className="py-1 text-gray-300 underline">
+              <button className="py-1 text-gray-300  bg-[#1B1D28] px-2 rounded-xl text-xs">
                 Switch To PHITER
               </button>
-              <button className="py-1 text-gray-300 underline">
+              <button className="py-1 text-gray-300  bg-[#1B1D28] px-2 rounded-xl text-xs">
                 Set Max Slippage
               </button>
             </div>
@@ -189,7 +189,7 @@ const TradingDashboard: React.FC = () => {
                   id="amount"
                   type="number"
                   placeholder="0.00"
-                  className="w-full px-3 py-2 bg-gray-700 rounded outline-none text-white"
+                  className="w-full px-3 py-2 bg-gray-700 rounded-xl outline-none border-black border text-white"
                 />
                 <div className="px-3 py-2 bg-gray-600 rounded">SOL</div>
               </div>
@@ -227,7 +227,7 @@ const TradingDashboard: React.FC = () => {
           </div>
 
           {/* Token Data */}
-          <div className="  p-4 rounded text-sm">
+          <div className=" bg-[#263248] p-4 rounded text-sm">
             <p className="mb-1">Token Data</p>
             <ul className="space-y-1">
               <li className="flex justify-between">
@@ -250,7 +250,7 @@ const TradingDashboard: React.FC = () => {
           </div>
 
           {/* Global Chats */}
-          <div className="  p-4 rounded flex flex-col h-72">
+          <div className=" bg-white  p-4 rounded flex flex-col text-black h-72">
             <h2 className="text-lg font-semibold mb-2">Global Chats</h2>
             <div className="flex-grow space-y-2 overflow-auto text-sm">
               <div className="flex items-center justify-between bg-gray-700 px-2 py-1 rounded">
