@@ -176,3 +176,21 @@ background: radial-gradient(403.07% 261.28% at -70.97% 15.31%, #263248 0%, rgba(
 background: var(--ffffff, rgba(255, 255, 255, 0.10));
 backdrop-filter: blur(6.329966068267822px);
 }
+
+
+
+/* styles/nprogress.css */
+.spinner {
+  width: 48px;               /* Circle size */
+  height: 48px;
+  border: 6px solid #e3e3e3; /* A light gray border */
+  border-right-color: #2979ff;  /* The arc color (blue, in this example) */
+  border-radius: 50%;        /* Make it circular */
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
