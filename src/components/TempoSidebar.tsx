@@ -6,7 +6,7 @@ import { FiSun } from "react-icons/fi";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { MdOutlineLogout } from "react-icons/md";
+
 import { PiLinkSimpleBreakBold } from "react-icons/pi";
 
 interface SidebarProps {
